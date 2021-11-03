@@ -14,7 +14,7 @@ const Banner = () => {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundBlendMode: "overlay",
-        backgroundColor: "#10232b",
+        backgroundColor: "rgb(42 104 225)",
         color: 'white'
 
     }
@@ -22,7 +22,7 @@ const Banner = () => {
         <Box sx={{ flexGrow: 1, }} style={banner}>
             <Container>
                 <Grid container spacing={2} style={{ alignItems: 'center' }} >
-                    <Grid xll={7} xl={7} lg={7} md={7} xs={12}>
+                    <Grid item xll={7} xl={7} lg={7} md={7} xs={12}>
                         <Box >
                             <Typography variant="h6" sx={{}}>
                                 Appointment
