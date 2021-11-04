@@ -5,8 +5,9 @@ import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import appointmentimg from '../../../images/appointment-bg.png'
 import doctor from '../../../images/doctor.png'
+import Button from '@mui/material/Button';
 
-const Appointment = () => {
+const AppointmentBanner = () => {
 
     const appointmentBg = {
         backgroundImage: `url(${appointmentimg})`,
@@ -32,9 +33,10 @@ const Appointment = () => {
                             <Typography variant="h3" sx={{ mt: 4, mb: 4 }}>
                                 Make an Appointment Today
                             </Typography>
-                            <Typography variant="h5" sx={{}}>
+                            <Typography variant="h5" sx={{ mb: 5 }}>
                                 It is long establish fact that a reader will be distractedby the readable content of a page when looking at its.
                             </Typography>
+                            <Button variant="contained">Appointment</Button>
                         </Box>
                     </Grid>
 
@@ -44,4 +46,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default AppointmentBanner;

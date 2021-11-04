@@ -5,17 +5,20 @@ import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import bannerbg from '../../../images/bg.png'
 import chair from '../../../images/chair.png'
-import Button from '@mui/material/Button';
+import Calendar from '../../Shared/Calendar/Calendar/Calendar';
 
-const Banner = () => {
+
+
+
+
+const AppointmentHeader = ({ date, setDate }) => {
+
     const banner = {
         backgroundImage: `url(${bannerbg})`,
         padding: '14% 0',
         backgroundAttachment: "fixed",
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundBlendMode: "overlay",
-
         color: 'black'
 
     }
@@ -24,19 +27,9 @@ const Banner = () => {
             <Container>
                 <Grid container spacing={2} style={{ alignItems: 'center' }} >
                     <Grid item xll={7} xl={7} lg={7} md={7} xs={12}>
-                        <Box >
-
-                            <Typography variant="h3" sx={{ mb: 4 }} style={{ fontWeight: 700 }}>
-                                Your New Smile <br /> Starts Here
-                            </Typography>
-                            <Typography variant="h5" sx={{ mb: 5 }}>
-                                It is long establish fact that a reader will be distractedby the readable content of a page when looking at its.
-                            </Typography>
-                            <Button variant="contained">Appointment</Button>
-
-                        </Box>
+                        <Calendar date={date} setDate={setDate} ></Calendar>
                     </Grid>
-                    <Grid xll={5} xl={5} lg={5} md={6} xs={12} >
+                    <Grid xll={5} xl={5} lg={5} md={5} xs={12} >
                         <img src={chair} style={{ width: '500px' }} alt="" />
                     </Grid>
                 </Grid>
@@ -45,4 +38,4 @@ const Banner = () => {
     );
 };
 
-export default Banner;
+export default AppointmentHeader;

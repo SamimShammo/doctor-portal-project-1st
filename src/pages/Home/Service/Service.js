@@ -27,7 +27,7 @@ const Service = ({ service }) => {
                         {name}
                     </Typography>
 
-                    <Typography variant="body2">
+                    <Typography variant="body2" sx={{ fontSize: 16 }}>
                         {description}
                     </Typography>
                 </CardContent>
