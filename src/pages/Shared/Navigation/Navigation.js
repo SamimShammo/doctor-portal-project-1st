@@ -13,7 +13,7 @@ const Navigation = () => {
     return (
         <Box sx={{ flexGrow: 0 }}>
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar sx={{ alignItems: 'center' }}>
                     <IconButton
                         size="large"
                         edge="start"
@@ -26,10 +26,10 @@ const Navigation = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Doctors Portal
                     </Typography>
-                    <Link to="/home" >
+                    <Link to="/home" style={{ color: 'white', textDecoration: 'none', marginRight: '30px', fontWeight: 600 }}>
                         Home
                     </Link>
-                    <Link to="/appointment">
+                    <Link to="/appointment" style={{ color: 'white', textDecoration: 'none', marginRight: '30px', fontWeight: 600 }}>
                         Appointment
                     </Link>
                     <Button color="inherit">Login</Button>
